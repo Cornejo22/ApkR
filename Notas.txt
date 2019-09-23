@@ -1,0 +1,20 @@
+1º Iniciar una nueva aplicación en angular : 
+	ng new <nombreProyecto>.
+2º Te preguntará si quieres añadir el routeo de la aplicación automaticamente. (Would you like to add Angular routing? (y/N))
+	Diremos que si.
+3º Te preguntará que tipo de formato de estilo en cascada quieres utilizar: 
+	En este caso CSS.
+4º Nos desplazaremos a nuestra carpeta donde tenemos creado el proyecto: 
+	<cd nombreProyecto>.
+5º Iniciaremos el servidor de Angular:
+	ng serve
+6º Para crear nuevos componentes,servicios,pipe,guards,etc.., usaremos el comando:
+	ng generate <schematic> o ng g <schematic>
+7º Crearemos dos componentes, el primero se llamara home y el segundo se llamará error.
+8º Importaremos las rutas necesarias en nuestra aplicación en la parte de routing-> app-routing.module.ts
+	const routes: Routes = [
+  	{ path: '/', component: HomeComponent },
+  	{ path: 'home', component: HomeComponent },
+  	{ path: '**', component: ErrorComponent },
+	];
+9º La etiqueta --> <router-outlet></router-outlet> mantendrá las diferentes partes de nuestra apk web
